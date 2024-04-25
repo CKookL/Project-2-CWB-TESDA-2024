@@ -186,6 +186,7 @@ p.center.white-text{
     }
     .background-clouds{
         overflow-x: hidden;
+        overflow-y: hidden;
     }
 }
 
