@@ -17,6 +17,7 @@
  }
 
 body{
+    height: 100vh;
     overflow-x: hidden;
     background-color: #622aff   ;
 }
@@ -31,33 +32,33 @@ body{
     z-index: -1;
 }
 
-img{
+.cloud{
     position: absolute;
     height: auto;
     width: 200px;
 }
 
-img:nth-child(1){
+.cloud:nth-child(1){
     right: -110%;
     top: 30%;
 }
 
-img:nth-child(2){
+.cloud:nth-child(2){
     bottom: 0;
     left: 40%;
 }
 
-img:nth-child(3){
+.cloud:nth-child(3){
     right: -90%;
     top: 80%;
 }
 
-img:nth-child(4){
+.cloud:nth-child(4){
     right: -60%;
     top: 35%;
 }
 
-img:nth-child(5){
+.cloud:nth-child(5){
     right: -200vw;
     top: 32%;
 }
@@ -124,6 +125,12 @@ p.center.white-text{
     position: absolute;
 }
 
+.brand-logo.center.hero{
+    display: none;
+    width: 275px;
+    height:auto ;
+}
+
 @keyframes cloud {
     0% {
         transform: translate3d(0, 0, 0);
@@ -147,8 +154,35 @@ p.center.white-text{
 
 }
 
-@media (min-width: 768px) {
+
     .cloud {
         animation: cloud 180s linear infinite;
     }
+
+
+@media (max-width: 993px) {
+    .brand-logo.center.hero {
+        margin: auto;
+        display: block;
+    }
+
+    .brand-logo.center{
+        display: none;
+    }
+    h3{
+        margin-top: 10px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    p.center.white-text{
+        font-size: 20px;
+    
+    }
 }
+
+@media (max-width: 669px){
+    .pixel-button > strong {
+        font-size: 8px;
+    }
+}
+
