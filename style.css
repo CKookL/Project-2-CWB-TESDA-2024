@@ -184,5 +184,8 @@ p.center.white-text{
     .pixel-button > strong {
         font-size: 8px;
     }
+    .background-clouds{
+        overflow-x: hidden;
+    }
 }
 
