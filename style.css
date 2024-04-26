@@ -79,6 +79,7 @@ nav .sidenav-trigger i{
     font-size: 35px;
 }
 .sidenav li>a{
+    font-family: kemco, sans-serif;
     color: #ffffff;
 }
 .sidenav li>a:hover{
