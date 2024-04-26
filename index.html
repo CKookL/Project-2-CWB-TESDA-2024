@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imgs/Logo.png" type="image/x-icon">
     <title>Project 2</title>
@@ -19,11 +21,12 @@
     <img src="imgs/cloud.png" alt="" class="cloud">
     </div>
 
-    <nav>
+    <nav>   
         <div class="nav-wrapper">
         <a href="https://play.pixels.xyz/" class="right pixel-button button-nav" style="font-size: 18px;" target="_blank"  ><strong >Play FOR FREE</strong></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <img src="imgs/icon.png" alt="" class="brand-logo center">
-        <ul id="nav-mobile" class="left hide-on-med-and-down" >
+        <ul class="left hide-on-med-and-down" >
             <li><a href="">TEAM</a></li>
             <li><a href="" target="_blank">PLATFORM</a></li>
             <li><a href="https://intercom.help/pixelsxyz/" target="_blank">HELP CENTER</a></li>
@@ -31,6 +34,15 @@
         </div>
     </nav>
 
+    <!-- SideNav -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">TEAM</a></li>
+        <li><a href="" target="_blank">PLATFORM</a></li>
+        <li><a href="https://intercom.help/pixelsxyz/" target="_blank">HELP CENTER</a></li>
+    </ul>
+
+
+    <!-- Hero -->
     <div class="container">
     <img src="imgs/icon.png" alt="" class="brand-logo center hero">
     <h3 class="center white-text">
@@ -43,14 +55,21 @@
     </div>
     </div> 
 
+
+    <!-- Land -->
+    <div class="pixel">
     <img src="imgs/land.png" alt="" class="responsive-img">
     <img src="imgs/landplant.gif" alt="" class="responsive-img">
     <img src="imgs/landowner.gif" alt="" class="responsive-img">
     <img src="imgs/landwizard.gif" alt="" class="responsive-img">
     <img src="imgs/landsmoke.gif" alt="" class="responsive-img">
+</div>
 
-    
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="function.js"></script>
 </body> 
 </html>

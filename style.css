@@ -8,18 +8,18 @@
 
 @font-face {
     font-family: kemco;
-    src: url(Kemco\ Pixel\ Bold.ttf);
+    src: url(fonts/Kemco\ Pixel\ Bold.ttf);
  }
 
  @font-face {
     font-family: depixel;
-    src: url(DePixelKlein.ttf);
+    src: url(fonts/DePixelKlein.ttf);
  }
 
 body{
     height: 100vh;
     overflow-x: hidden;
-    background-color: #622aff   ;
+    background-color: #622aff;
 }
 
 .background-clouds{
@@ -118,8 +118,12 @@ p.center.white-text{
     justify-content: center;
     gap: 40px;
 }
-
-.responsive-img{
+.pixel{
+    display: block;
+}
+.pixel img{
+    display: inline-block;
+    height: auto;
     margin-top: 40px;
     width: 100%;
     position: absolute;
@@ -130,7 +134,9 @@ p.center.white-text{
     width: 275px;
     height:auto ;
 }
-
+.border{
+    height: 50px;
+}
 @keyframes cloud {
     0% {
         transform: translate3d(0, 0, 0);
@@ -161,6 +167,7 @@ p.center.white-text{
 
 
 @media (max-width: 993px) {
+    
     .brand-logo.center.hero {
         margin: auto;
         display: block;
@@ -169,6 +176,7 @@ p.center.white-text{
     .brand-logo.center{
         display: none;
     }
+
     h3{
         margin-top: 10px;
         font-size: 40px;
@@ -186,7 +194,7 @@ p.center.white-text{
     }
     .background-clouds{
         overflow-x: hidden;
-        overflow-y: hidden;
+        
     }
 }
 
