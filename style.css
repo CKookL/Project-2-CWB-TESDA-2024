@@ -71,8 +71,19 @@ nav{
     background-color: transparent;
     z-index: 99;
 }
-
-
+.sidenav{
+    padding-top: 20px;
+    background-color:  #5b27e9;
+}
+nav .sidenav-trigger i{
+    font-size: 35px;
+}
+.sidenav li>a{
+    color: #ffffff;
+}
+.sidenav li>a:hover{
+    padding-left: 20px;
+}
 
 .pixel-button {
     font-family: kemco, sans-serif;
@@ -89,6 +100,10 @@ nav{
     color: #28248C;
     clip-path: polygon(/* top left */ 0 4px, 4px 4px, 4px 0, /* top right */ calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px, /* bottom right */ 100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, /* bottom left */ 4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px));
     box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.2), inset 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+.pixel-button > strong:hover{
+    color: #ffffff;
+    background-color: #c1d829;
 }
 
 .brand-logo.center{
